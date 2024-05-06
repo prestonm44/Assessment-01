@@ -178,7 +178,7 @@ console.log(numStrings);
 ```
 
 - [ ] **A.** The code causes an error because `numStrings` needs to be a `let` variable.
-- [ ] **B.** The code causes an error because `i <= nums.length` should be `i < nums.length`
+- [x] **B.** The code causes an error because `i <= nums.length` should be `i < nums.length`
 - [ ] **C.** The code causes an error because `i++` isn't valid JavaScript syntax.
 - [ ] **D.** There is no error; the code generates the expected output.
 
@@ -210,7 +210,7 @@ outputArgs('hi', 'bye');
   of the expected output.
 - [ ] **C.** The code causes an error because the `a`, `b`, and `c` variables haven't been
   initialized.
-- [ ] **D.** There is no error; the code generates the expected output.
+- [x] **D.** There is no error; the code generates the expected output.
 
 ## B. Free response
 
@@ -231,7 +231,7 @@ REPLACE THIS WITH YOUR ANSWER
 **_What's the difference between defining and calling a function?_**
 
 ```
-REPLACE THIS WITH YOUR ANSWER
+When you define a function, you're declaring what will happen once the function is called. Calling the function means actually asking the declared function to do something.
 ```
 
 ### B.2. Describe these data types.
@@ -241,25 +241,25 @@ Write a short description of the following data types:
 **_String_**
 
 ```
-REPLACE THIS WITH YOUR ANSWER
+A string data type is sequence of characters. A string is created by entering quotation marks, single quotes, or back ticks.
 ```
 
 **_Number_**
 
 ```
-REPLACE THIS WITH YOUR ANSWER
+A number data type is a numeric value. Number data types can be both integers and floating-point numbers.
 ```
 
 **_Boolean_**
 
 ```
-REPLACE THIS WITH YOUR ANSWER
+A Boolean data type is either a true or a false value.
 ```
 
 **_Array_**
 
 ```
-REPLACE THIS WITH YOUR ANSWER
+An array can store multiple values and elements within a single variable. It can store strings, numbers, and boolean values.
 ```
 
 ### B.3. Trace the value of `x`
@@ -282,7 +282,7 @@ completed for you.
 
 ```
 Initial values: y = 0, x = 5
-1:              y = 1, x = ??
-2:              y = 2, x = ??
-3:              y = 3, x = ??
+1:              y = 1, x = 10
+2:              y = 2, x = 15
+3:              y = 3, x = 20
 ```
