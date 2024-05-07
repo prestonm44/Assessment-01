@@ -2,20 +2,36 @@
 // Ex.:
 //   greaterThanTen([1, 2, 3, 11, 12, 13]);
 //   => [11, 12, 13]
-function greaterThanTen(numbers) {}
+function greaterThanTen(numbers) {
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] > 10) {
+      console.log(numbers[i]);
+    }
+  }
+}
+greaterThanTen(numbers);
 
 // Given an array of strings, return all words that start with 'b' or 'B'.
 // Ex.:
 //   bWords(['banana', 'orange', 'apple', 'Bonobo', 'kiwi', 'pear']);
 //   => ['banana', 'Bonobo]
-function bWords(words) {}
+function bWords(words) {
+  return words.startsWith("b") || words.startsWith("B");
+}
+let strings = ['banana', 'orange', 'apple', 'Bonobo', 'kiwi', 'pear'];
+const bWordsOnly = strings.filter(bWords)
+console.log(bWordsOnly)
+
 
 // Add all the elements from additionalItems to the end of originalArray.
 // Return the originalArray..
 // Ex.:
 //  extend([1, 2, 3], [4, 5, 6]);
 //  => [1, 2, 3, 4, 5, 6]
-function extend(originalArray, additionalItems) {}
+function extend(originalArray, additionalItems) {
+
+
+}
 
 // Return an array of all items with the given length.
 // Ex.:
@@ -27,7 +43,15 @@ function itemsWithLength(items, length) {}
 // Ex.:
 //   everyOtherItem(['a', 'b', 'c', 'd', 'e']);
 //   => ['a', 'c', 'e']
-function everyOtherItem(items) {}
+function everyOtherItem(items) {
+  let result = []
+  for (let i = 0; i < items.length; i = i + 2) {
+    result.push(items[i])
+  }
+  return result
+}
+let items = ['a', 'b', 'c', 'd', 'e']
+console.log(everyOtherItem(items))
 
 // Given a list of words and a letter, return the indexes of the words that
 // start with that letter. You can assume that the words and letter will always
