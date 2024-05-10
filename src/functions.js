@@ -45,7 +45,7 @@ function fullName(firstName, lastName) {
 //   generateSentence('Kay', 'coffee', 'the local cafe');
 //   => 'Kay was drinking coffee at the local cafe.'
 function generateSentence(person, beverage, location) {
-  const sentence = `${person} was drinking ${beverage} at ${location}`;
+  const sentence = `${person} was drinking ${beverage} at ${location}.`;
   return sentence
 }
 
@@ -91,7 +91,30 @@ function stickyCase(string) {
 // Ex.:
 //   leetspeak('javascript');
 //   => 'j4v45cr1p7'
-function leetspeak(string) {}
+function leetspeak(string) {
+  const result = ""
+  for (i = 0; i < string.length; i++) {
+    if (string[i] === 'a') {
+     result += 4;
+    }
+    if (string[i] === 'e') {
+      result += 3;
+    }
+    if (string[i] === 'i') {
+      result += 1;
+    }
+    if (string[i] === 'o') {
+      result += 0;
+    }
+    if (string[i] === 's') {
+      result += 5;
+    }
+    if (string[i] === 't') {
+      result += 7;
+    }
+  }
+  return result;
+}
 
 export {
   approximatelyEqual,
