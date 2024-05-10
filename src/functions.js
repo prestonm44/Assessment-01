@@ -70,7 +70,14 @@ function censorVowels(string) {
 // Ex.:
 //   stickyCase('hello world');
 //   => 'hElLo wOrLd'
-function stickyCase(string) {}
+function stickyCase(string) {
+  const result = "";
+  for (i = 0; i < string.length; i++) {
+    result += i % 2 === 0 ? string.charAt(i).toUpperCase() : string.charAt(i);
+  }
+  return result;
+}
+
 
 // Return the given string in leetspeak. Leetspeak is a modified version of
 // English where characters are replaced by numbers or symbols. For this
