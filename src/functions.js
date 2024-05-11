@@ -71,10 +71,14 @@ function censorVowels(string) {
 //   stickyCase('hello world');
 //   => 'hElLo wOrLd'
 function stickyCase(string) {
-  const result = "";
-  for (i = 0; i < string.length; i++) {
-    result += i % 2 === 0 ? string.charAt(i).toUpperCase() : string.charAt(i);
+  let result = "";
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] !== ' ') {
+      result += i % 2 === 0 ? string[i].toUpperCase() : string[i].toLowerCase();
+  } else {
+    result += ' ';
   }
+}
   return result;
 }
 
